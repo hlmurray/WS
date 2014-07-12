@@ -115,8 +115,13 @@ footer {
 	color: white;
 }
 
+.footerWrapper {
+	width:875px;
+	margin: 0 auto;
+}
+
 .logoFooter {
-	padding: 10% 10% 3% 4%;
+	padding: 10% 10% 6% 0;
 }
 
 .logoFooter img {
@@ -132,7 +137,6 @@ footer {
 }
 
 footer section {
-	width: 33%;
 	float: left;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -140,8 +144,61 @@ footer section {
 	box-sizing: border-box;
 }
 
+.usual {
+	width:40%;
+	padding-left:3%;
+}
+
+.social, .newsletter {
+	width:20%;
+}
+
 footer section h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
-	font-size:12px;
+	font-size: 12px;
+}
+
+footer section p {
+	font-family: Helvetica, Arial;
+	font-size: 10px;
+	padding-top: 2%;
+}
+
+input {
+	font-family: Georgia !important;
+	font-size: 14px !important;
+	border: none;
+	padding: 2% 2% 2% 6%;
+}
+
+.usual div {
+	display: inline-block;
+}
+
+.left {
+	padding-right: 10%;
+}
+
+.copyright {
+	padding: 10% 0;
+	font-size: 9px;
+}
+
+.copy {
+	float: left;
+}
+
+.ws {
+	float: right;
+	padding-top: 1.5%;
+}
+
+.ws img {
+	vertical-align: middle;
+}
+
+.ws p {
+	display: inline;
+	color:#333333;
 }
