@@ -1,0 +1,55 @@
+/* Hannah Murray ; Wondersauce */
+
+body {
+	width:1024px;
+	margin: 0 auto;
+}
+
+header {
+	width:960px;
+	margin: 0 auto;
+	padding: 3% 0 3% 0;
+	font-family: Helvetica, Arial;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:.5px;
+}
+
+.logo {
+	vertical-align: middle;
+}
+
+nav {
+	display:inline;
+	float:right;
+	width:71%;
+}
+
+nav a {
+	text-decoration: none;
+	color:black;
+	padding-left: 6%;
+}
+
+.hero {
+	background-image: url(../img/ws_hero.jpg);
+	height:301px;
+	width:960px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.hero img {
+	position: relative;
+	top: 37%;
+	border: 2px solid white;
+	padding:10px;
+}
+
+.leftArrow {
+	left:3%;
+}
+
+.rightArrow {
+	left: 80%;
+}
