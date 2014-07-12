@@ -1,55 +1,147 @@
 /* Hannah Murray ; Wondersauce */
 
-body {
-	width:1024px;
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.wrapper {
+	width: 960px;
 	margin: 0 auto;
 }
 
 header {
-	width:960px;
-	margin: 0 auto;
-	padding: 3% 0 3% 0;
-	font-family: Helvetica, Arial;
-	font-size:12px;
-	font-weight:bold;
-	letter-spacing:.5px;
+	padding: 2% 0 2% 0;
+	position:fixed;
+	background-color:white;
+	width:100%;
+	z-index:99999;
 }
 
 .logo {
 	vertical-align: middle;
+	float:left;
 }
 
 nav {
-	display:inline;
 	float:right;
-	width:71%;
+	font-family: Helvetica, Arial;
+	font-size:12px;
+	font-weight:bold;
+	letter-spacing:.5px;
+	width:65%;
+	vertical-align: middle;
+	padding-top:.8%;
 }
 
 nav a {
 	text-decoration: none;
 	color:black;
-	padding-left: 6%;
+	padding-left: 5%;
 }
 
-.hero {
-	background-image: url(../img/ws_hero.jpg);
-	height:301px;
-	width:960px;
-	position: relative;
-	margin: 0 auto;
+main {
+	padding: 5em 0 2% 0;
 }
 
-.hero img {
-	position: relative;
-	top: 37%;
-	border: 2px solid white;
-	padding:10px;
+.matte {
+	position: absolute;
+	z-index: 9999;
+	left: 39%;
+	color: hsl(0, 100%, 100%);
+	width: 25%;
+	top: 33%;
 }
 
-.leftArrow {
-	left:3%;
+.matte h1 {
+	font-family: Helvetica, Arial;
+	letter-spacing:1.5px;
+	line-height:27.5pt;
+	text-align:center;
+	text-transform: uppercase;
+	margin:0;
 }
 
-.rightArrow {
-	left: 80%;
+.matte p {
+	text-align: center;
+	font-family: Georgia;
+	font-size: 12px;
+	line-height: 14pt;
+}
+
+.men {
+	display: inline-block;
+	padding-right: 2.75%;
+}
+
+.menHover {
+	display: none;
+}
+
+.women {
+	display: inline-block;
+	padding-right: 3%;
+}
+
+.container {
+	display: inline-block;
+}
+
+.newEyes {
+	padding-bottom: 15%;
+}
+
+.third div {
+	display: inline-block;
+}
+
+.home {
+	padding: 3% 3% 0 0;
+}
+
+footer {
+	background-color:black;
+	color: white;
+}
+
+.logoFooter {
+	padding: 10% 10% 3% 4%;
+}
+
+.logoFooter img {
+	vertical-align: middle;
+}
+
+.logoFooter p {
+	text-transform: uppercase;
+	font-size: 7pt;
+	letter-spacing: 3px;
+	display: inline;
+	padding-left: 2%;
+}
+
+footer section {
+	width: 33%;
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+footer section h1 {
+	text-transform: uppercase;
+	font-family: Helvetica, Arial;
+	font-size:12px;
 }
