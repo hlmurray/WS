@@ -86,7 +86,8 @@ main {
 	line-height: 14pt;
 }
 
-.men, .women {
+.men,
+.women {
 	margin-bottom: 3%;
 }
 
@@ -95,12 +96,10 @@ main {
 	margin-right: 3.33%;
 	position: relative;
 	float: left;
-	height: 100%;
-	opacity: 0.75;
-	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-o-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
+	-webkit-transition: all .25s ease-in-out;
+	   -moz-transition: all .25s ease-in-out;
+	     -o-transition: all .25s ease-in-out;
+	        transition: all .25s ease-in-out;
 }
 
 .women {
@@ -108,10 +107,10 @@ main {
 	margin-right: 3.33%;
 	position: relative;
 	float: left;
-	-webkit-transition: opacity 0.25s ease-in-out;
-	-moz-transition: opacity 0.25s ease-in-out;
-	-o-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
 }
 
 .women:hover,
@@ -123,19 +122,26 @@ main {
 	opacity: 0.75;
 }
 
-.women:hover .shop,
-.men:hover .shop,
+.women:hover .shop a,
+.men:hover .shop a,
 .eyes:hover .callout,
 .events:hover .callout,
 .home:hover .callout,
 .virtual:hover .callout {
 	opacity: 1;
-	-webkit-transition: opacity 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
+	   -moz-transition: all 0.5s ease-in-out;
+	     -o-transition: all 0.5s ease-in-out;
+	        transition: all 0.5s ease-in-out;
+}
+
+.callout {
+	opacity: 0;
 }
 
 .shop,
 .callout {
-	background-color: rgba(0,0,0,0.25);
+	background-color: rgba(0, 0, 0, 0.15);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -143,11 +149,25 @@ main {
 	text-align: center;
 	bottom: 0;
 	right: 0;
-	opacity: 0;
-	-webkit-transition: opacity 0.25s ease-in-out;
-	-moz-transition: opacity 0.25s ease-in-out;
-	-o-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+}
+
+.men h1,
+.women h1 {
+	color: black;
+	opacity: 1;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+}
+
+.men:hover h1, 
+.women:hover h1 {
+	color: white;
 }
 
 .shop h1,
@@ -159,6 +179,7 @@ main {
 }
 
 .shop a {
+	opacity: 0;
 	font-size: 14px;
 	border: 1px solid white;
 	padding: 5px 30px;
@@ -193,31 +214,26 @@ main {
 	display: inline-block;
 	float: right;
 }
-.row {
-	max-width: 100%;
-	min-height: 1px;
-	display: block;
 
-}
-
-.eyes, .events {
+.eyes,
+.events {
 	position: relative;
 }
 
 .eyes {
 	margin-bottom: 12% !important;
 	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-o-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
+       -moz-transition: opacity .25s ease-in-out;
+	     -o-transition: opacity .25s ease-in-out;
+	        transition: opacity .25s ease-in-out;
 }
 
 .events {
 	margin-bottom: 0 !important;
 	-webkit-transition: opacity .25s ease-in-out;
-	-moz-transition: opacity .25s ease-in-out;
-	-o-transition: opacity .25s ease-in-out;
-	transition: opacity .25s ease-in-out;
+	   -moz-transition: opacity .25s ease-in-out;
+	     -o-transition: opacity .25s ease-in-out;
+	        transition: opacity .25s ease-in-out;
 }
 
 .home, .virtual {
@@ -228,17 +244,17 @@ main {
 .home {
 	float: left;
 	-webkit-transition: opacity 0.25s ease-in-out;
-	-moz-transition: opacity 0.25s ease-in-out;
-	-o-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
+	   -moz-transition: opacity 0.25s ease-in-out;
+	     -o-transition: opacity 0.25s ease-in-out;
+	        transition: opacity 0.25s ease-in-out;
 }
 
 .virtual {
 	float: right;
 	-webkit-transition: opacity 0.25s ease-in-out;
-	-moz-transition: opacity 0.25s ease-in-out;
-	-o-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
+	   -moz-transition: opacity 0.25s ease-in-out;
+	     -o-transition: opacity 0.25s ease-in-out;
+	        transition: opacity 0.25s ease-in-out;
 }
 
 footer {
@@ -270,9 +286,9 @@ footer {
 footer article {
 	float: left;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	     -o-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 .sectionWrap {
