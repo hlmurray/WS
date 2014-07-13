@@ -1,5 +1,9 @@
 /* Hannah Murray ; Wondersauce */
 
+a {
+	text-decoration: none;
+}
+
 .clearfix:before,
 .clearfix:after {
   content: " ";
@@ -46,7 +50,6 @@
 }
 
 .stickyNav a {
-	text-decoration: none;
 	color:black;
 	padding-left: 5%;
 }
@@ -80,9 +83,16 @@ main {
 	line-height: 14pt;
 }
 
+.second div {
+	padding-bottom: 3%;
+}
+
 .men {
 	display: inline-block;
-	padding-right: 2.75%;
+	padding-right: 3.33%;
+	position: relative;
+	float: left;
+	height: 100%;
 }
 
 .menHover {
@@ -91,23 +101,83 @@ main {
 
 .women {
 	display: inline-block;
-	padding-right: 3%;
+	padding-right: 3.33%;
+	position: relative;
+	float: left;
 }
 
-.container {
+.shop,
+.callout {
+	position: absolute;
+	top: 35%;
+	left: 0;
+	color: white;
+	text-align: center;
+	bottom: 0;
+	right: 0;
+}
+
+.shop h1,
+.callout h1 {
+	text-transform: uppercase;
+	font-family: Helvetica, Arial;
+	font-size: 16px;
+	letter-spacing: .5px;
+}
+
+.shop a {
+	font-size: 14px;
+	border: 1px solid white;
+	padding: 5px 30px;
+	color: white;
+}
+
+.shop--black,
+.shop--black a {
+	color: black;
+	border-color: black;
+}
+
+.callout {
+	top: 20%;
+}
+
+.callout h1 {
+	font-size: 14px;
+}
+
+.callout p {
+	font-size: 12px;
+	color: white;
+	font-family: Georgia;
+	line-height: 18px;
+}
+
+.column {
 	display: inline-block;
+	float: right;
 }
 
-.newEyes {
-	padding-bottom: 15%;
+.column div {
+	position: relative;
+}
+
+.eyes {
+	padding-bottom: 15% !important;
 }
 
 .third div {
 	display: inline-block;
+	position: relative;
 }
 
 .home {
-	padding: 3% 3% 0 0;
+	padding-right: 3.4%;
+	float: left;
+}
+
+.virtual {
+	float: right;
 }
 
 footer {
@@ -166,7 +236,6 @@ footer h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
 	font-size: 12px;
-	padding-bottom: 20px;
 }
 
 footer ul {
@@ -182,7 +251,6 @@ footer li {
 }
 
 footer a {
-	text-decoration: none;
 	color: white;
 }
 
@@ -204,6 +272,7 @@ input {
 .copyright {
 	padding: 10% 0;
 	font-size: 9px;
+	letter-spacing: .5px;
 }
 
 .copy {
@@ -222,4 +291,5 @@ input {
 .ws p {
 	display: inline;
 	color:#333333;
+	font-weight: bold;
 }
