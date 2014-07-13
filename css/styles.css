@@ -27,30 +27,33 @@ a {
 
 .masthead {
 	padding: 2% 0 2% 0;
-	position:fixed;
-	background-color:white;
-	width:100%;
-	z-index:99999;
+	position: fixed;
+	background-color: white;
+	width: 100%;
+	z-index: 99999;
 }
-
+img {
+	vertical-align: middle;
+	max-width: 100%;
+}
 .logo {
 	vertical-align: middle;
-	float:left;
+	float: left;
 }
 
-.stickyNav {
-	float:right;
+.sticky {
+	float: right;
 	font-family: Helvetica, Arial;
-	font-size:12px;
-	font-weight:bold;
-	letter-spacing:.5px;
-	width:65%;
+	font-size: 12px;
+	font-weight: bold;
+	letter-spacing: .5px;
+	width: 65%;
 	vertical-align: middle;
-	padding-top:.8%;
+	padding-top: .8%;
 }
 
-.stickyNav a {
-	color:black;
+.sticky a {
+	color: black;
 	padding-left: 5%;
 }
 
@@ -69,11 +72,11 @@ main {
 
 .matte h1 {
 	font-family: Helvetica, Arial;
-	letter-spacing:1.5px;
-	line-height:27.5pt;
-	text-align:center;
+	letter-spacing: 1.5px;
+	line-height: 27.5pt;
+	text-align: center;
 	text-transform: uppercase;
-	margin:0;
+	margin: 0;
 }
 
 .matte p {
@@ -83,38 +86,68 @@ main {
 	line-height: 14pt;
 }
 
-.second div {
-	padding-bottom: 3%;
+.men, .women {
+	margin-bottom: 3%;
 }
 
 .men {
 	display: inline-block;
-	padding-right: 3.33%;
+	margin-right: 3.33%;
 	position: relative;
 	float: left;
 	height: 100%;
-}
-
-.menHover {
-	display: none;
+	opacity: 0.75;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
 }
 
 .women {
 	display: inline-block;
-	padding-right: 3.33%;
+	margin-right: 3.33%;
 	position: relative;
 	float: left;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
+}
+
+.women:hover,
+.men:hover,
+.eyes:hover,
+.events:hover,
+.home:hover,
+.virtual:hover {
+	opacity: 0.75;
+}
+
+.women:hover .shop,
+.men:hover .shop,
+.eyes:hover .callout,
+.events:hover .callout,
+.home:hover .callout,
+.virtual:hover .callout {
+	opacity: 1;
+	-webkit-transition: opacity 0.5s ease-in-out;
 }
 
 .shop,
 .callout {
+	background-color: rgba(0,0,0,0.25);
 	position: absolute;
-	top: 35%;
+	top: 0;
 	left: 0;
 	color: white;
 	text-align: center;
 	bottom: 0;
 	right: 0;
+	opacity: 0;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
 }
 
 .shop h1,
@@ -132,14 +165,17 @@ main {
 	color: white;
 }
 
-.shop--black,
-.shop--black a {
-	color: black;
-	border-color: black;
+.shop div {
+	margin-top: 35%;
 }
 
-.callout {
-	top: 20%;
+.callout div {
+	margin-top: 20%;
+}
+
+.home .callout div,
+.virtual .callout div {
+	margin-top: 9%;
 }
 
 .callout h1 {
@@ -157,36 +193,61 @@ main {
 	display: inline-block;
 	float: right;
 }
+.row {
+	max-width: 100%;
+	min-height: 1px;
+	display: block;
 
-.column div {
+}
+
+.eyes, .events {
 	position: relative;
 }
 
 .eyes {
-	padding-bottom: 15% !important;
+	margin-bottom: 12% !important;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
 }
 
-.third div {
+.events {
+	margin-bottom: 0 !important;
+	-webkit-transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-o-transition: opacity .25s ease-in-out;
+	transition: opacity .25s ease-in-out;
+}
+
+.home, .virtual {
 	display: inline-block;
 	position: relative;
 }
 
 .home {
-	padding-right: 3.4%;
 	float: left;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
 }
 
 .virtual {
 	float: right;
+	-webkit-transition: opacity 0.25s ease-in-out;
+	-moz-transition: opacity 0.25s ease-in-out;
+	-o-transition: opacity 0.25s ease-in-out;
+	transition: opacity 0.25s ease-in-out;
 }
 
 footer {
-	background-color:black;
+	background-color: black;
 	color: white;
 }
 
 .footerWrapper {
-	width:875px;
+	width: 875px;
 	margin: 0 auto;
 }
 
@@ -229,7 +290,7 @@ footer article {
 
 .newsletter {
 	width: 30%;
-	float:right;
+	float:  right;
 }
 
 footer h1 {
@@ -290,6 +351,6 @@ input {
 
 .ws p {
 	display: inline;
-	color:#333333;
+	color: #333333;
 	font-weight: bold;
 }
