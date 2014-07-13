@@ -20,12 +20,12 @@ $(window).load(function() {
 });
 </script>
 <body>
-	<header>
+	<header class="masthead">
 		<div class="wrapper">
 			<div class="logo clearfix">
-				<img src="img/ws_logo.png" alt="WS logo">
+				<a href="#"><img src="img/ws_logo.png" alt="WS logo"></a>
 			</div>
-			<nav class="clearfix">
+			<nav class="stickyNav clearfix">
 				<a href="#">Men</a>
 				<a href="#">Women</a>
 				<a href="#">Special Collections</a>
@@ -88,34 +88,48 @@ $(window).load(function() {
 	<footer class="clearfix">
 		<div class="footerWrapper">
 			<div class="logoFooter">
-				<img src="img/ws_logoW.png" alt="WS logo white">
+				<a href="#"><img src="img/ws_logoW.png" alt="WS logo white"></a>
 				<p>Wondersauce</p>
 			</div>
-			<div class="sectionWrap clearfix">
-				<section class="usual">
-					<h1>The Usual</h1>
-					<div class="left clearfix">
-						<p>Find Us</p>
-						<p>Home Trial Kit</p>
-						<p>Gift Cards</p>
-					</div>
-					<div class="right clearfix">
-						<p>Terms & Conditions</p>
-						<p>FAQ's</p>
-						<p>Contact Us</p>
-					</div>
-				</section>
-				<section class="social">
-					<h1>Social</h1>
-					<p>Facebook</p>
-					<p>Twitter</p>
-					<p>Instagram</p>
-				</section>
-				<section class="newsletter">
-					<h1>Newsletter</h1>
+			<section class="sectionWrap clearfix">
+				<article class="usual">
+					<header>
+						<h1>The Usual</h1>
+					</header>
+					<nav class="left clearfix">
+						<ul>
+							<a href="#"><li>Find Us</li></a>
+							<a href="#"><li>Home Trial Kit</li></a>
+							<a href="#"><li>Gift Cards</li></a>
+						</ul>
+					</nav>
+					<nav class="right clearfix">
+						<ul>
+							<a href="#"><li>Terms & Conditions</li></a>
+							<a href="#"><li>FAQ's</li></a>
+							<a href="#"><li>Contact Us</li></a>
+						</ul>
+					</nav>
+				</article>
+				<article class="social">
+					<header>
+						<h1>Social</h1>
+					</header>
+					<nav>
+						<ul>
+							<a href="#"><li>Facebook</li></a>
+							<a href="#"><li>Twitter</li></a>
+							<a href="#"><li>Instagram</li></a>
+						</ul>
+					</nav>
+				</article>
+				<article class="newsletter">
+					<header>
+						<h1>Newsletter</h1>
+					</header>
 					<input type="email" placeholder="Sign Up">
-				</section>
-			</div>
+				</article>
+			</section>
 			<div class="copyright clearfix">
 				<section class="copy clearfix">
 					<p>&copy;2014 Eponym. All rights reserved.</p>

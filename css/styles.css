@@ -21,7 +21,7 @@
 	margin: 0 auto;
 }
 
-header {
+.masthead {
 	padding: 2% 0 2% 0;
 	position:fixed;
 	background-color:white;
@@ -34,7 +34,7 @@ header {
 	float:left;
 }
 
-nav {
+.stickyNav {
 	float:right;
 	font-family: Helvetica, Arial;
 	font-size:12px;
@@ -45,7 +45,7 @@ nav {
 	padding-top:.8%;
 }
 
-nav a {
+.stickyNav a {
 	text-decoration: none;
 	color:black;
 	padding-left: 5%;
@@ -136,7 +136,7 @@ footer {
 	padding-left: 2%;
 }
 
-footer section {
+footer article {
 	float: left;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -144,25 +144,46 @@ footer section {
 	box-sizing: border-box;
 }
 
+.sectionWrap {
+	width: 800px;
+	margin: 0 auto;
+}
+
 .usual {
-	width:40%;
-	padding-left:3%;
+	width: 45%;
 }
 
-.social, .newsletter {
-	width:20%;
+.social {
+	width: 25%;
 }
 
-footer section h1 {
+.newsletter {
+	width: 30%;
+	float:right;
+}
+
+footer h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
 	font-size: 12px;
+	padding-bottom: 20px;
 }
 
-footer section p {
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+
+footer li {
 	font-family: Helvetica, Arial;
 	font-size: 10px;
-	padding-top: 2%;
+	line-height: 18px;
+	list-style: none;
+}
+
+footer a {
+	text-decoration: none;
+	color: white;
 }
 
 input {
@@ -172,7 +193,7 @@ input {
 	padding: 2% 2% 2% 6%;
 }
 
-.usual div {
+.usual nav {
 	display: inline-block;
 }
 
