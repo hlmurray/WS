@@ -92,17 +92,38 @@ main {
 }
 
 .men {
+	cursor: pointer;
 	display: inline-block;
 	margin-right: 3.33%;
 	position: relative;
 	float: left;
-	-webkit-transition: all .25s ease-in-out;
-	   -moz-transition: all .25s ease-in-out;
-	     -o-transition: all .25s ease-in-out;
-	        transition: all .25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+}
+
+.crossfade {
+    position: relative;
+    width: 352px;
+}
+.crossfade img {
+    position: absolute;
+    left: 0;
+    opacity: 1;
+    -webkit-transition: all 0.5s ease-in-out;
+       -moz-transition: all 0.5s ease-in-out;
+         -o-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;    
+            transition: all 0.5s ease-in-out;
+}
+ 
+.men:hover .crossfade img.top {
+    opacity: 0;
 }
 
 .women {
+	cursor: pointer;
 	display: inline-block;
 	margin-right: 3.33%;
 	position: relative;
@@ -124,10 +145,10 @@ main {
 
 .women:hover .shop a,
 .men:hover .shop a,
-.eyes:hover .callout,
-.events:hover .callout,
-.home:hover .callout,
-.virtual:hover .callout {
+.eyes:hover .callout p,
+.events:hover .callout p,
+.home:hover .callout p,
+.virtual:hover .callout p {
 	opacity: 1;
 	-webkit-transition: all 0.5s ease-in-out;
 	   -moz-transition: all 0.5s ease-in-out;
@@ -135,7 +156,7 @@ main {
 	        transition: all 0.5s ease-in-out;
 }
 
-.callout {
+.callout p {
 	opacity: 0;
 }
 
@@ -155,8 +176,7 @@ main {
 	        transition: all 0.25s ease-in-out;
 }
 
-.men h1,
-.women h1 {
+.men h1 {
 	color: black;
 	opacity: 1;
 	-webkit-transition: all 0.25s ease-in-out;
@@ -165,8 +185,7 @@ main {
 	        transition: all 0.25s ease-in-out;
 }
 
-.men:hover h1, 
-.women:hover h1 {
+.men:hover h1 {
 	color: white;
 }
 
@@ -174,7 +193,7 @@ main {
 .callout h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
-	font-size: 16px;
+	font-size: 20px;
 	letter-spacing: .5px;
 }
 
