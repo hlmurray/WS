@@ -113,8 +113,7 @@ main {
     opacity: 1;
     -webkit-transition: all 0.5s ease-in-out;
        -moz-transition: all 0.5s ease-in-out;
-         -o-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;    
+         -o-transition: all 0.5s ease-in-out;  
             transition: all 0.5s ease-in-out;
 }
  
@@ -281,13 +280,8 @@ footer {
 	color: white;
 }
 
-.footerWrapper {
-	width: 875px;
-	margin: 0 auto;
-}
-
 .logoFooter {
-	padding: 10% 10% 6% 0;
+	padding: 10% 0 6% 0;
 }
 
 .logoFooter img {
@@ -311,7 +305,7 @@ footer article {
 }
 
 .sectionWrap {
-	width: 800px;
+	width: 89.5%;
 	margin: 0 auto;
 }
 
@@ -320,12 +314,12 @@ footer article {
 }
 
 .social {
-	width: 25%;
+	width: 35%;
 }
 
 .newsletter {
-	width: 30%;
-	float:  right;
+	width: 20%;
+	float: right;
 }
 
 footer h1 {
@@ -362,11 +356,11 @@ input {
 }
 
 .left {
-	padding-right: 10%;
+	margin-right: 10%;
 }
 
 .copyright {
-	padding: 10% 0;
+	margin: 10% 0;
 	font-size: 9px;
 	letter-spacing: .5px;
 }
@@ -377,7 +371,7 @@ input {
 
 .ws {
 	float: right;
-	padding-top: 1.5%;
+	margin-top: 1.5%;
 }
 
 .ws img {
