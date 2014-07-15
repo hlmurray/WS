@@ -101,19 +101,18 @@ main {
 	color: hsl(0, 100%, 100%);
 	width: 25%;
 	top: 33%;
+	text-align: center;
 }
 
 .matte h1 {
 	font-family: Helvetica, Arial;
 	letter-spacing: 1.5px;
 	line-height: 27.5pt;
-	text-align: center;
 	text-transform: uppercase;
 	margin: 0;
 }
 
 .matte p {
-	text-align: center;
 	font-family: Georgia;
 	font-size: 12px;
 	line-height: 14pt;
