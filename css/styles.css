@@ -67,7 +67,7 @@ footer {
 
 .sticky {
 	font-family: Helvetica, Arial;
-	font-size: 12px;
+	font-size: 0.75em;
 	font-weight: bold;
 	letter-spacing: .5px;
 	vertical-align: middle;
@@ -141,7 +141,7 @@ main {
 
 .hero-header p {
 	font-family: Georgia;
-	font-size: 12px;
+	font-size: 0.75em;
 	line-height: 14pt;
 }
 
@@ -215,10 +215,10 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: white;
-	text-align: center;
 	bottom: 0;
 	right: 0;
+	color: white;
+	text-align: center;
 	-webkit-transition: all 0.25s ease-in-out;
 	   -moz-transition: all 0.25s ease-in-out;
 	     -o-transition: all 0.25s ease-in-out;
@@ -229,13 +229,13 @@ main {
 .callout h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
-	font-size: 20px;
-	letter-spacing: .5px;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
 }
 
 .shop a {
 	opacity: 0;
-	font-size: 14px;
+	font-size: 0.875em;
 	border: 1px solid white;
 	padding: 5px 30px;
 	color: white;
@@ -250,12 +250,12 @@ main {
 }
 
 .callout h1 {
-	font-size: 14px;
+	font-size: 0.875em;
 }
 
 .callout p {
 	opacity: 0;
-	font-size: 12px;
+	font-size: 0.75em;
 	color: white;
 	font-family: Georgia;
 	line-height: 18px;
@@ -296,7 +296,7 @@ main {
 footer h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 footer ul {
@@ -306,7 +306,7 @@ footer ul {
 
 footer li {
 	font-family: Helvetica, Arial;
-	font-size: 10px;
+	font-size: 0.625em;
 	line-height: 18px;
 	list-style: none;
 }
@@ -329,7 +329,7 @@ footer .logo {
 
 footer .logo p {
 	text-transform: uppercase;
-	font-size: 7pt;
+	font-size: 0.563em;
 	letter-spacing: 3px;
 	display: inline;
 	padding-left: 2%;
@@ -352,9 +352,12 @@ footer .logo p {
 	width: 20%;
 }
 
+.email {
+	font-family: Georgia;
+	font-size: 0.875em;
+}
+
 input[type=email] {
-	font-family: Georgia !important;
-	font-size: 14px !important;
 	border: none;
 	padding: 3% 3% 3% 6%;
 	outline: 0;
@@ -378,8 +381,8 @@ input[type=email]:focus {
 
 .copyright {
 	margin: 10% 0;
-	font-size: 9px;
-	letter-spacing: .5px;
+	font-size: 0.563em;
+	letter-spacing: 0.5px;
 }
 
 .ws {
