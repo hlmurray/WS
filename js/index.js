@@ -1,3 +1,5 @@
+// Hannah Murray ; Wondersauce
+
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
@@ -5,7 +7,3 @@ $(window).load(function() {
     slideshow: true
   });
 });
-
-$(function() {
-    $("#datepicker").datepicker();
-  });
