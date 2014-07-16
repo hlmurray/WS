@@ -1,3 +1,5 @@
+// Hannah Murray ; Wondersauce
+
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",

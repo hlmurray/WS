@@ -1,7 +1,21 @@
 /* Hannah Murray ; Wondersauce */
 
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
 a {
 	text-decoration: none;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+footer {
+	background-color: black;
+	color: white;
 }
 
 .clearfix:before,
@@ -20,10 +34,24 @@ a {
   *zoom: 1;
 }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
 .wrapper {
 	width: 960px;
 	margin: 0 auto;
 }
+
+/* header */
 
 .masthead {
 	padding: 2% 0 2% 0;
@@ -32,19 +60,14 @@ a {
 	width: 100%;
 	z-index: 99999;
 }
-img {
-	vertical-align: middle;
-	max-width: 100%;
-}
+
 .logo {
 	vertical-align: middle;
-	float: left;
 }
 
 .sticky {
-	float: right;
 	font-family: Helvetica, Arial;
-	font-size: 12px;
+	font-size: 0.75em;
 	font-weight: bold;
 	letter-spacing: .5px;
 	vertical-align: middle;
@@ -90,57 +113,77 @@ img {
 	        transform: translateY(5px);
 }
 
+.cart {
+	color: #c1c0c0;
+}
+
+/* main */
+
 main {
 	padding: 5em 0 2% 0;
 }
 
-.matte {
+/* flexslider */
+
+.hero-header {
 	position: absolute;
-	z-index: 9999;
 	left: 39%;
 	color: hsl(0, 100%, 100%);
 	width: 25%;
 	top: 33%;
+	text-align: center;
+	z-index: 99999;
 }
 
-.matte h1 {
+.hero-header h1 {
 	font-family: Helvetica, Arial;
 	letter-spacing: 1.5px;
-	line-height: 27.5pt;
-	text-align: center;
+	line-height: 36px;
 	text-transform: uppercase;
 	margin: 0;
 }
 
-.matte p {
-	text-align: center;
+.hero-header p {
 	font-family: Georgia;
-	font-size: 12px;
-	line-height: 14pt;
+	font-size: 0.75em;
+	line-height: 19px;
 }
 
-.men,
-.women {
+/* shop */
+
+.crossfade {
 	margin-bottom: 3%;
 }
 
-.men {
+.crossfade {
 	cursor: pointer;
 	display: inline-block;
 	margin-right: 3.33%;
 	position: relative;
-	float: left;
 	-webkit-transition: all 0.25s ease-in-out;
 	   -moz-transition: all 0.25s ease-in-out;
 	     -o-transition: all 0.25s ease-in-out;
 	        transition: all 0.25s ease-in-out;
 }
 
-.crossfade {
+.crossfade h1 {
+	color: black;
+	opacity: 1;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
+}
+
+.crossfade:hover h1 {
+	color: white;
+}
+
+.crossfade--callout {
     position: relative;
     width: 352px;
 }
-.crossfade img {
+.crossfade--callout img {
     position: absolute;
     left: 0;
     opacity: 1;
@@ -150,46 +193,24 @@ main {
             transition: all 0.5s ease-in-out;
 }
  
-.men:hover .crossfade img.top {
+.crossfade:hover .crossfade--callout .top {
     opacity: 0;
 }
 
-.women {
-	cursor: pointer;
-	display: inline-block;
-	margin-right: 3.33%;
-	position: relative;
-	float: left;
-	-webkit-transition: all 0.25s ease-in-out;
-	   -moz-transition: all 0.25s ease-in-out;
-	     -o-transition: all 0.25s ease-in-out;
-	        transition: all 0.25s ease-in-out;
-}
-
-.women:hover,
-.men:hover,
-.eyes:hover,
-.events:hover,
-.home:hover,
-.virtual:hover {
+.crossfade:hover,
+.crossfade-right:hover,
+.crossfade-bottom:hover {
 	opacity: 0.75;
 }
 
-.women:hover .shop a,
-.men:hover .shop a,
-.eyes:hover .callout p,
-.events:hover .callout p,
-.home:hover .callout p,
-.virtual:hover .callout p {
+.crossfade:hover .shop a,
+.crossfade-right:hover .callout p,
+.crossfade-bottom:hover .callout p {
 	opacity: 1;
 	-webkit-transition: all 0.5s ease-in-out;
 	   -moz-transition: all 0.5s ease-in-out;
 	     -o-transition: all 0.5s ease-in-out;
 	        transition: all 0.5s ease-in-out;
-}
-
-.callout p {
-	opacity: 0;
 }
 
 .shop,
@@ -198,40 +219,27 @@ main {
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: white;
-	text-align: center;
 	bottom: 0;
 	right: 0;
-	-webkit-transition: all 0.25s ease-in-out;
-	   -moz-transition: all 0.25s ease-in-out;
-	     -o-transition: all 0.25s ease-in-out;
-	        transition: all 0.25s ease-in-out;
-}
-
-.men h1 {
-	color: black;
-	opacity: 1;
-	-webkit-transition: all 0.25s ease-in-out;
-	   -moz-transition: all 0.25s ease-in-out;
-	     -o-transition: all 0.25s ease-in-out;
-	        transition: all 0.25s ease-in-out;
-}
-
-.men:hover h1 {
 	color: white;
+	text-align: center;
+	-webkit-transition: all 0.25s ease-in-out;
+	   -moz-transition: all 0.25s ease-in-out;
+	     -o-transition: all 0.25s ease-in-out;
+	        transition: all 0.25s ease-in-out;
 }
 
 .shop h1,
 .callout h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
-	font-size: 20px;
-	letter-spacing: .5px;
+	font-size: 1.25em;
+	letter-spacing: 0.5px;
 }
 
 .shop a {
 	opacity: 0;
-	font-size: 14px;
+	font-size: 0.875em;
 	border: 1px solid white;
 	padding: 5px 30px;
 	color: white;
@@ -245,17 +253,13 @@ main {
 	margin-top: 20%;
 }
 
-.home .callout div,
-.virtual .callout div {
-	margin-top: 9%;
-}
-
 .callout h1 {
-	font-size: 14px;
+	font-size: 0.875em;
 }
 
 .callout p {
-	font-size: 12px;
+	opacity: 0;
+	font-size: 0.75em;
 	color: white;
 	font-family: Georgia;
 	line-height: 18px;
@@ -263,102 +267,40 @@ main {
 
 .column {
 	display: inline-block;
-	float: right;
 }
 
-.eyes,
-.events {
-	position: relative;
-}
-
-.eyes {
+.crossfade-right {
 	margin-bottom: 12% !important;
-	-webkit-transition: opacity .25s ease-in-out;
-       -moz-transition: opacity .25s ease-in-out;
-	     -o-transition: opacity .25s ease-in-out;
-	        transition: opacity .25s ease-in-out;
+	position: relative;
+	-webkit-transition: opacity 0.25s ease-in-out;
+       -moz-transition: opacity 0.25s ease-in-out;
+	     -o-transition: opacity 0.25s ease-in-out;
+	        transition: opacity 0.25s ease-in-out;
 }
 
-.events {
+.bottom {
 	margin-bottom: 0 !important;
-	-webkit-transition: opacity .25s ease-in-out;
-	   -moz-transition: opacity .25s ease-in-out;
-	     -o-transition: opacity .25s ease-in-out;
-	        transition: opacity .25s ease-in-out;
 }
 
-.home, .virtual {
+.crossfade-bottom  {
 	display: inline-block;
 	position: relative;
-}
-
-.home {
-	float: left;
 	-webkit-transition: opacity 0.25s ease-in-out;
 	   -moz-transition: opacity 0.25s ease-in-out;
 	     -o-transition: opacity 0.25s ease-in-out;
 	        transition: opacity 0.25s ease-in-out;
 }
 
-.virtual {
-	float: right;
-	-webkit-transition: opacity 0.25s ease-in-out;
-	   -moz-transition: opacity 0.25s ease-in-out;
-	     -o-transition: opacity 0.25s ease-in-out;
-	        transition: opacity 0.25s ease-in-out;
+.crossfade-bottom .callout div {
+	margin-top: 9%;
 }
 
-footer {
-	background-color: black;
-	color: white;
-}
-
-.logoFooter {
-	padding: 10% 0 6% 0;
-}
-
-.logoFooter img {
-	vertical-align: middle;
-}
-
-.logoFooter p {
-	text-transform: uppercase;
-	font-size: 7pt;
-	letter-spacing: 3px;
-	display: inline;
-	padding-left: 2%;
-}
-
-footer article {
-	float: left;
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	     -o-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-
-.sectionWrap {
-	width: 89.5%;
-	margin: 0 auto;
-}
-
-.usual {
-	width: 45%;
-}
-
-.social {
-	width: 35%;
-}
-
-.newsletter {
-	width: 20%;
-	float: right;
-}
+/* footer */
 
 footer h1 {
 	text-transform: uppercase;
 	font-family: Helvetica, Arial;
-	font-size: 12px;
+	font-size: 0.75em;
 }
 
 footer ul {
@@ -368,7 +310,7 @@ footer ul {
 
 footer li {
 	font-family: Helvetica, Arial;
-	font-size: 10px;
+	font-size: 0.625em;
 	line-height: 18px;
 	list-style: none;
 }
@@ -385,9 +327,41 @@ footer a:hover {
 	color: hsl(202, 86%, 62%);
 }
 
+footer .logo {
+	padding: 10% 0 6% 0;
+}
+
+footer .logo p {
+	text-transform: uppercase;
+	font-size: 0.563em;
+	letter-spacing: 3px;
+	display: inline;
+	padding-left: 2%;
+}
+
+.section-wrap {
+	width: 89.5%;
+	margin: 0 auto;
+}
+
+.usual {
+	width: 45%;
+}
+
+.social {
+	width: 35%;
+}
+
+.newsletter {
+	width: 20%;
+}
+
+.email {
+	font-family: Georgia;
+	font-size: 0.875em;
+}
+
 input[type=email] {
-	font-family: Georgia !important;
-	font-size: 14px !important;
 	border: none;
 	padding: 3% 3% 3% 6%;
 	outline: 0;
@@ -405,22 +379,17 @@ input[type=email]:focus {
 	display: inline-block;
 }
 
-.left {
+.info {
 	margin-right: 10%;
 }
 
 .copyright {
 	margin: 10% 0;
-	font-size: 9px;
-	letter-spacing: .5px;
-}
-
-.copy {
-	float: left;
+	font-size: 0.563em;
+	letter-spacing: 0.5px;
 }
 
 .ws {
-	float: right;
 	margin-top: 1.5%;
 }
 
