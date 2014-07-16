@@ -113,6 +113,10 @@ footer {
 	        transform: translateY(5px);
 }
 
+.cart {
+	color: #c1c0c0;
+}
+
 /* main */
 
 main {
@@ -134,7 +138,7 @@ main {
 .hero-header h1 {
 	font-family: Helvetica, Arial;
 	letter-spacing: 1.5px;
-	line-height: 27.5pt;
+	line-height: 36px;
 	text-transform: uppercase;
 	margin: 0;
 }
@@ -142,7 +146,7 @@ main {
 .hero-header p {
 	font-family: Georgia;
 	font-size: 0.75em;
-	line-height: 14pt;
+	line-height: 19px;
 }
 
 /* shop */
